@@ -5,7 +5,7 @@ library(shiny)
 library(ggplot2)
 
 # read data
-data <- Corpus(DirSource("C:/Users/Jeremy/Desktop/Workspace/R/shiny_party/data"))
+data <- Corpus(DirSource("data"))
 
 
 # server function
