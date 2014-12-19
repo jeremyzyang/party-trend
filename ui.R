@@ -36,10 +36,10 @@ shinyUI(fluidPage(
   fluidRow(
     
     column(4,p("")),
-    column(3, 
+    column(2, 
            textInput("keyword", label = h5("Enter the keyword:"), 
                      value = "god")),
-    column(3,submitButton("Submit")),                 
+    column(2,br(),submitButton("Submit")),                 
     column(2,p(""))
     
     
