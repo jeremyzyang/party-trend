@@ -33,6 +33,8 @@ shinyUI(fluidPage(
   
   ),
   
+  br(),
+  br(),
   hr(),
   
   fluidRow(
