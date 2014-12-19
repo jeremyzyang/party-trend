@@ -67,7 +67,8 @@ shinyServer(function(input, output) {
    geom_line(aes(y = d.freq, colour= "red")) + 
    geom_line(aes(y = r.freq, colour= "blue")) +
    theme(legend.position="none") +
-   scale_x_continuous(breaks = seq(1956, 2012, 4))
+   scale_x_continuous(breaks = seq(1956, 2012, 4)) +
+   opts(panel.grid.major = none, panel.grid.minor = none) 
  })
  
  output$plot2 <- renderPlot({
@@ -80,7 +81,8 @@ shinyServer(function(input, output) {
      geom_line(aes(y = d.freq.s, colour= "red")) + 
      geom_line(aes(y = r.freq.s, colour= "blue")) +
      theme(legend.position="none") +
-     scale_x_continuous(breaks = seq(1956, 2012, 4))
+     scale_x_continuous(breaks = seq(1956, 2012, 4)) +
+     opts(panel.grid.major = none, panel.grid.minor = none) 
  })
 
 }) 
