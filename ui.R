@@ -38,9 +38,8 @@ shinyUI(fluidPage(
     column(4,p("")),
     column(6, 
            textInput("keyword", label = h3("Enter the keyword:"), 
-                     value = "good"),
-                     submitButton("Submit")),   
-    column(2,p(""))
+                     value = "good")),   
+    column(2,submitButton("Submit"))
     
     
     
