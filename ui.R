@@ -18,10 +18,7 @@ shinyUI(fluidPage(
     column(2,h5("Party Manifesto:")),
     
     column(8,
-           plotOutput('plot1')),
-    column(1,p("Blue:Democrat",style='color:blue'),
-           br(),
-           p("Red:Republican",style='color:red'))
+           plotOutput('plot1'))
     
   ),
   
