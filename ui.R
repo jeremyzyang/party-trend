@@ -8,6 +8,8 @@ shinyUI(fluidPage(
   titlePanel("Keyword Trend"),
   
   p("Jeremy Yang"),
+  br(),
+  br(),
   
   
   # Sidebar with a slider input for the number of bins
