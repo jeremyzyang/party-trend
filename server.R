@@ -1,8 +1,6 @@
-#### server script 
-
-
 library(shiny)
 library(ggplot2)
+library(tm)
 
 # read data
 data <- Corpus(DirSource("data"))
@@ -52,9 +50,6 @@ shinyServer(function(input, output) {
     
   }) 
  
-  
-   
- 
  
  
  output$plot1 <- renderPlot({
@@ -67,7 +62,9 @@ shinyServer(function(input, output) {
    geom_line(aes(y = d.freq, colour= "red")) + 
    geom_line(aes(y = r.freq, colour= "blue")) +
    theme(legend.position="none") +
-   scale_x_continuous(breaks = seq(1956, 2012, 4)) 
+   scale_x_continuous(breaks = seq(1956, 2012, 4)) +
+   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
+           panel.background = element_blank())
  })
  
  output$plot2 <- renderPlot({
@@ -80,7 +77,9 @@ shinyServer(function(input, output) {
      geom_line(aes(y = d.freq.s, colour= "red")) + 
      geom_line(aes(y = r.freq.s, colour= "blue")) +
      theme(legend.position="none") +
-     scale_x_continuous(breaks = seq(1956, 2012, 4))
+     scale_x_continuous(breaks = seq(1956, 2012, 4)) +
+     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
+           panel.background = element_blank())
  })
 
 }) 
